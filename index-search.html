@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Modeling Type</title>
+	<link href="css/custom-theme/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+	<link href="css/style-search.css" rel="stylesheet">
+	<link href="css/simplePagination.css" rel="stylesheet">
+	<style>
+	body{
+		font: 70% "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	</style>
+
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+<!--	<script type="text/javascript" src="js/model.js"></script> -->
+	<script type="text/javascript" src="js/typesearch.js"></script>
+	<script type="text/javascript" src="js/resultsearch.js"></script>
+	<script type="text/javascript" src="js/simplePagination.js"></script>
+
+
+</head>
+
+<body>
+<div id='content'>
+	<div id='dialog2'></div>
+<div id="model-title" class="ui-widget"><br><br><br><br>
+<h1 id="selectmodel"><a id="select-model" href="#">Select a Model</a></h1><h1 id="model-selection"></h1><a id="gotoadd" href="index.html">Add a Model</a>
+
+</div>
+<br>
+<div id="thebox">	
+<fieldset>
+<!--SEARCH HERE-->
+<div id="search">
+
+<fieldset>
+<legend>Search and Browse</legend>
+<div id="searchbox">
+	<div id="searcharea">
+		<br><br>
+		<input id="perform-search"></input><br>
+		<p style="text-align: right;"><a href="">Advanced Search</a></p>
+	</div>
+	
+	<br><br><br>
+
+	<div id="filters"> <h3>Filter By</h3><br>
+	  <div id="filter-area">
+	    <table id="filterbox" width="200">
+		<!--Read All Controlled variable and list with their options-->
+		</table>
+	  </div>
+	</div><br><br>
+	
+<div id="divResult"></div>
+</div>
+</fieldset>
+</div> <!--END SEARCH-->
+
+<div id="results">
+	<fieldset>
+		<legend>Results</legend>
+		<div id="onerecord" hidden>
+			<div id="therecord"></div>
+			<div id="goback">
+				<button id="button" class="save" name="save" hidden>Save</button>
+				<button id="button" class="edit" name="edit">Edit</button>
+				<button id="button" class="update" name="update" hidden>Update</button>
+				<button id="button" class="cancel" name="cancel" hidden>Cancel</button>
+			<button id="button" name="go-back">Back</button></div>
+		</div>
+		<div id="resultbox">
+			<div id="result-summary">
+				<!--Input Something-->				
+				<!--x Results Matched from y Records-->
+			</div>
+			<div id="result-list">
+				<!--List of All Results-->
+			</div><br><br>
+			<div id="page-select">
+				<!--Show Page Number-->
+			</div>
+		</div>
+	</fieldset>
+	<div id="create-new"><button id="button" name="create-new-rec">Create New Record</button></div>
+
+</fieldset>
+</div>
+
+<br><br>
+</div> <!--END BOX -->
+
+<br><br><br>
+</div>
+
+</body>
+</html>
+
