@@ -62,7 +62,7 @@ $.sycBigToSmall = function (rowNo) {
 
 // Save model string to Repo
 $.saveToRepo = function (name, theJSON) {
-	var queryToProcess = "http://10.27.4.229:8080/set/11156/repo.1-12";
+	var queryToProcess = "http://...";
 	attName = "att." + name;
 	var newOne = {};
 	newOne[attName] = theJSON;
@@ -82,7 +82,7 @@ $.onSaveComplete = function (data) {
 	$("#dialog").html("Add Model Successfully");
 	$("#dialog").dialog();
 	$('#accordion').empty();		
-	var queryToProcess = "http://10.27.4.229:8080/do/11156/repo.1-12";
+	var queryToProcess = "http://...";
 	$.ajax({
 		url:queryToProcess,
 		type:"GET",

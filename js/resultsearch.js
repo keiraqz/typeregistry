@@ -57,7 +57,7 @@ $(document).ready(function(){
 	 	var	selectdesign = modelstring[selected];
 		design = jQuery.parseJSON(selectdesign);
 		$.loadPage(design);
-		var queryToProcess = "http://10.27.4.229:8080/do?query=objatt_model:" + selected;
+		var queryToProcess = "http://...:8080/do?query=objatt_model:" + selected;
 		$.performInitialSearch(queryToProcess);
 		$('#onerecord').prop("hidden", true);
 	});
@@ -132,7 +132,7 @@ $.createModel = function () {
 
 	theNew = JSON.stringify(newModel);
 	
-	var queryToProcess = "http://10.27.4.229:8080/set/";
+	var queryToProcess = "http://.../set/";
 	
 		$.ajax({
 	        url:queryToProcess,
@@ -175,7 +175,7 @@ $.updateModel = function () {
 
 	theUpdate = JSON.stringify(updateModel);
 	
-	var queryToProcess = "http://10.27.4.229:8080/set/" + theModelHandle;
+	var queryToProcess = "http://...:8080/set/" + theModelHandle;
 	
 		$.ajax({
 	        url:queryToProcess,

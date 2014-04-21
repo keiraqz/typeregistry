@@ -6,7 +6,7 @@ $(document).ready(function(){
 	
   $(document).on('click', '[name="button_add"]', function(){
 	$('#accordion').empty();		
-	var queryToProcess = "http://10.27.4.229:8080/do/11156/repo.1-12";
+	var queryToProcess = "http://...";
 	$.ajax({
 		url:queryToProcess,
 		type:"GET",
@@ -80,7 +80,7 @@ $(document).ready(function(){
 				$("#" + currentOldModel + "-advanced :input").attr("disabled", false);
 				$("#" + currentOldModel + "-advanced[name='model"+ currentOldModel +"']").attr("disabled", true);
 				
-				var queryToProcess = "http://10.27.4.229:8080/set/11156/repo.1-12";
+				var queryToProcess = "http://...";
 				attName = "att." + currentOldModel;
 				var updateOne = {};
 				themodel = $.updateOldModel();
@@ -105,7 +105,7 @@ $(document).ready(function(){
 				        success:function () {
 							called = 0;
 							allModel = {};
-							var queryToProcess = "http://10.27.4.229:8080/do/11156/repo.1-12";
+							var queryToProcess = "http://...";
 							if (called == 0) {
 							$.ajax({
 								url:queryToProcess,
